@@ -1,0 +1,102 @@
+/* Universal Styles */
+
+html {
+  font-size: 16px;
+}
+
+.sitecontainer {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* begin header styling */
+
+header {
+  width: 100%;
+  height: 4rem;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .title {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+header nav {
+  font-size: 1.2rem;
+}
+
+header nav ul li {
+  padding: .5rem;
+}
+
+/*changes Academy color*/
+header .title span:last-child  {
+  color: lightgray;
+}
+
+header .title img{
+  margin-left: 1.5rem;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+/*Headline and button stylings*/
+h2  {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size:2rem;
+}
+
+.btn {
+  border-radius: 1px;
+  width: 75%;
+  background-color: darkgray;
+  padding: 8px;
+  text-align: center;
+}
+
+/*begin dualcontainer styling*/
+
+.dualcontainer {
+  width: 100%;
+  display: inline-flex;
+  flex-flow: row nowrap;
+}
+
+.dualcontainer1 {
+  background-color: lightgray;
+}
+
+.dualcontainer .col1 {
+  width: 60%;
+  padding: 2rem 1.5rem;
+}
+
+.dualcontainer .col2 {
+  width: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.dualcontainer .col2 h2 {
+  margin-bottom: 1.5rem;
+}
+
+.dualcontainer .col2 h4 {
+  margin-bottom: 1.5rem;
+}
+
+.dualcontainer .col1 img {
+  max-width: 100%;
+  max-height: 100%;
+}
