@@ -2,6 +2,7 @@
 
 html {
   font-size: 16px;
+  font-family: sans-serif;
 }
 
 .sitecontainer {
@@ -36,7 +37,11 @@ header nav ul li {
 
 /*changes Academy color*/
 header .title span:last-child  {
-  color: lightgray;
+  color: #D7D7D7;
+}
+
+header .title span {
+  text-transform: uppercase;
 }
 
 header .title img{
@@ -52,20 +57,31 @@ h2  {
   font-size: 4rem;
 }
 
+h3 {
+  font-size: 3rem;
+}
+
 h4 {
   font-size:2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
 }
 
 .btn {
   border-radius: 1px;
   width: 75%;
-  background-color: darkgray;
+  background-color: #4b4b4b;
+  color: white;
   padding: 8px;
   text-align: center;
+  font-size: 1.2rem;
 }
 
-/*begin dualcontainer styling*/
+/*begin body styling*/
 
+/*Section 1 */
 .dualcontainer {
   width: 100%;
   display: inline-flex;
@@ -73,7 +89,7 @@ h4 {
 }
 
 .dualcontainer1 {
-  background-color: lightgray;
+  background-color: #D7D7D7;
 }
 
 .dualcontainer .col1 {
@@ -88,15 +104,74 @@ h4 {
   justify-content: center;
 }
 
+.dualcontainer1 {
+  display: flex;
+}
+
 .dualcontainer .col2 h2 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .dualcontainer .col2 h4 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
 }
 
 .dualcontainer .col1 img {
   max-width: 100%;
   max-height: 100%;
+}
+
+/*Section 2 */
+
+.dualcontainer .col1 .media {
+  margin-bottom: 32px;
+}
+
+.dualcontainer .col1 .quote {
+  margin-top: 24px;
+}
+
+.dualcontainer .col1 .quote p {
+  margin-bottom: 24px;
+}
+
+.dualcontainer .col2 .snip {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+/*created 1px border for 2nd section of body */
+.dualcontainer2 {
+  display: flex;
+}
+
+.dualcontainer2 .col2 {
+  border: 1px #D7D7D7 solid;
+}
+
+.dualcontainer2 .col2 .snip {
+  border: 1px #D7D7D7 solid;
+}
+
+.dualcontainer .col2 .snip .snippic img {
+  max-width: 100%;
+  margin: 1rem;
+}
+
+.dualcontainer .col2 .snip .snippic {
+  width: 35%;
+}
+
+.dualcontainer .col2 .snip .sniptext {
+  width: 65%;
+  padding-left: 2rem;
+}
+
+.dualcontainer .col2 .snip3 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 100%;
+  background-color: #D7D7D7;
 }
