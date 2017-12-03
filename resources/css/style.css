@@ -1,8 +1,57 @@
 /* Universal Styles */
 
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Barlow Semi Condensed Italic'), local('BarlowSemiCondensed-Italic'), url(https://fonts.gstatic.com/s/barlowsemicondensed/v1/rObwC0zkSDuhDJaXoDJAlTkAScVmGMyNkdGsXCHahE_2Ot9t5h1GRSTIE78Whtoh.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Barlow Semi Condensed Italic'), local('BarlowSemiCondensed-Italic'), url(https://fonts.gstatic.com/s/barlowsemicondensed/v1/rObwC0zkSDuhDJaXoDJAlVttN7NAm-UbZA3d6BJ7elc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Barlow Semi Condensed Regular'), local('BarlowSemiCondensed-Regular'), url(https://fonts.gstatic.com/s/barlowsemicondensed/v1/Ok4yyskPwFvZPrXlQ7v9050M7CckEjtJ2VMldUDu5nQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Barlow Semi Condensed Regular'), local('BarlowSemiCondensed-Regular'), url(https://fonts.gstatic.com/s/barlowsemicondensed/v1/Ok4yyskPwFvZPrXlQ7v908BvcTyoFVl2hWxSOgahpEY.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Barlow Semi Condensed SemiBold'), local('BarlowSemiCondensed-SemiBold'), url(https://fonts.gstatic.com/s/barlowsemicondensed/v1/ZyxfuHr9OuBXRZHPDKRFf-8IT5agCxjisB1Fr0Ls3yIU24FapfJwyacJ6xNu5rm9.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Barlow Semi Condensed';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Barlow Semi Condensed SemiBold'), local('BarlowSemiCondensed-SemiBold'), url(https://fonts.gstatic.com/s/barlowsemicondensed/v1/ZyxfuHr9OuBXRZHPDKRFf7pQX8I2DyXG4uHm2BpGsSH3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 html {
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .sitecontainer {
@@ -53,20 +102,25 @@ header nav ul li {
 }
 
 /*Headline and button stylings*/
+
+h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
 h2  {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
 h4 {
-  font-size:2rem;
+  font-size:1.8rem;
 }
 
 h5 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .btn {
@@ -129,6 +183,7 @@ h5 {
 
 .dualcontainer .col1 .quote {
   margin-top: 24px;
+  font-style: italic;
 }
 
 .dualcontainer .col1 .quote p {
@@ -147,11 +202,11 @@ h5 {
 }
 
 .dualcontainer2 .col2 {
-  border: 1px #D7D7D7 solid;
+  border-left: 1px #D7D7D7 solid;
 }
 
 .dualcontainer2 .col2 .snip {
-  border: 1px #D7D7D7 solid;
+  border-top: 1px #D7D7D7 solid;
 }
 
 .dualcontainer .col2 .snip .snippic img {
@@ -174,4 +229,49 @@ h5 {
   align-items: center;
   height: 100%;
   background-color: #D7D7D7;
+}
+
+.snip p{
+  margin-top: .5rem;
+  line-height: 1.2rem;
+}
+
+
+/*Section three */
+.tricontainer {
+  background-color: #D7D7D7;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.sectiontitle {
+  display: flex;
+  justify-content: center;
+}
+
+.coursecontainer {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 1rem 1.85rem;
+  justify-content: center;
+}
+
+.sectiontitle h3 {
+  margin-top: 2rem;
+}
+
+.courseblock {
+  margin: 1rem 1rem;
+  max-width: 28%;
+  background-color: white;
+}
+
+.courseblock .blockpic img {
+  max-width: 100%;
+}
+
+.courseblock .blocktext {
+  padding: 1rem;
+  padding-bottom: 1.5rem;
 }
