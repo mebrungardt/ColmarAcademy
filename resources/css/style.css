@@ -1,6 +1,7 @@
 /* Universal Styles */
 
 /* latin-ext */
+
 @font-face {
   font-family: 'Barlow Semi Condensed';
   font-style: italic;
@@ -8,7 +9,9 @@
   src: local('Barlow Semi Condensed Italic'), local('BarlowSemiCondensed-Italic'), url(https://fonts.gstatic.com/s/barlowsemicondensed/v1/rObwC0zkSDuhDJaXoDJAlTkAScVmGMyNkdGsXCHahE_2Ot9t5h1GRSTIE78Whtoh.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
+
 @font-face {
   font-family: 'Barlow Semi Condensed';
   font-style: italic;
@@ -16,7 +19,9 @@
   src: local('Barlow Semi Condensed Italic'), local('BarlowSemiCondensed-Italic'), url(https://fonts.gstatic.com/s/barlowsemicondensed/v1/rObwC0zkSDuhDJaXoDJAlVttN7NAm-UbZA3d6BJ7elc.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+
 /* latin-ext */
+
 @font-face {
   font-family: 'Barlow Semi Condensed';
   font-style: normal;
@@ -24,7 +29,9 @@
   src: local('Barlow Semi Condensed Regular'), local('BarlowSemiCondensed-Regular'), url(https://fonts.gstatic.com/s/barlowsemicondensed/v1/Ok4yyskPwFvZPrXlQ7v9050M7CckEjtJ2VMldUDu5nQ.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
+
 @font-face {
   font-family: 'Barlow Semi Condensed';
   font-style: normal;
@@ -32,7 +39,9 @@
   src: local('Barlow Semi Condensed Regular'), local('BarlowSemiCondensed-Regular'), url(https://fonts.gstatic.com/s/barlowsemicondensed/v1/Ok4yyskPwFvZPrXlQ7v908BvcTyoFVl2hWxSOgahpEY.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+
 /* latin-ext */
+
 @font-face {
   font-family: 'Barlow Semi Condensed';
   font-style: normal;
@@ -40,7 +49,9 @@
   src: local('Barlow Semi Condensed SemiBold'), local('BarlowSemiCondensed-SemiBold'), url(https://fonts.gstatic.com/s/barlowsemicondensed/v1/ZyxfuHr9OuBXRZHPDKRFf-8IT5agCxjisB1Fr0Ls3yIU24FapfJwyacJ6xNu5rm9.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+
 /* latin */
+
 @font-face {
   font-family: 'Barlow Semi Condensed';
   font-style: normal;
@@ -52,6 +63,7 @@
 html {
   font-size: 16px;
   font-family: 'Barlow Semi Condensed', sans-serif;
+  color: #757575;
 }
 
 .sitecontainer {
@@ -85,7 +97,7 @@ header nav ul li {
 }
 
 /*changes Academy color*/
-header .title span:last-child  {
+header .title span:last-child {
   color: #D7D7D7;
 }
 
@@ -93,7 +105,7 @@ header .title span {
   text-transform: uppercase;
 }
 
-header .title img{
+header .title img {
   margin-left: 1.5rem;
 }
 
@@ -101,13 +113,18 @@ header nav ul li {
   display: inline;
 }
 
+header nav ul li a {
+  text-decoration: none;
+}
+
 /*Headline and button stylings*/
 
 h2, h3, h4, h5 {
   font-weight: 600;
+  color: #4B4B4B;
 }
 
-h2  {
+h2 {
   font-size: 3.5rem;
 }
 
@@ -116,7 +133,7 @@ h3 {
 }
 
 h4 {
-  font-size:1.8rem;
+  font-size: 1.8rem;
 }
 
 h5 {
@@ -136,6 +153,7 @@ h5 {
 /*begin body styling*/
 
 /*Section 1 */
+
 .dualcontainer {
   width: 100%;
   display: inline-flex;
@@ -179,6 +197,7 @@ h5 {
 
 .dualcontainer .col1 .media {
   margin-bottom: 32px;
+  max-width: 100%;
 }
 
 .dualcontainer .col1 .quote {
@@ -190,6 +209,11 @@ h5 {
   margin-bottom: 24px;
 }
 
+.dualcontainer .col1 .quote span {
+  color: #4B4B4B;
+  font-style: normal;
+}
+
 .dualcontainer .col2 .snip {
   display: flex;
   flex-flow: row nowrap;
@@ -197,6 +221,7 @@ h5 {
 }
 
 /*created 1px border for 2nd section of body */
+
 .dualcontainer2 {
   display: flex;
 }
@@ -223,7 +248,7 @@ h5 {
   padding-left: 2rem;
 }
 
-.dualcontainer .col2 .snip3 {
+.dualcontainer .col2 .snipgray {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -231,13 +256,13 @@ h5 {
   background-color: #D7D7D7;
 }
 
-.snip p{
+.snip p {
   margin-top: .5rem;
   line-height: 1.2rem;
 }
 
-
 /*Section three */
+
 .tricontainer {
   background-color: #D7D7D7;
   display: flex;
@@ -274,4 +299,40 @@ h5 {
 .courseblock .blocktext {
   padding: 1rem;
   padding-bottom: 1.5rem;
+}
+
+.courseblock .blocktext p {
+  margin-top: .5rem;
+}
+
+/*Section four */
+
+.dualcontainer .col1 .media video {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.dualcontainer3 {
+  display: flex;
+}
+
+.dualcontainer3 .col2 {
+  justify-content: flex-start;
+  padding-top: 1rem;
+}
+
+/* Footer styling */
+
+.fullfooter {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #D7D7D7;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.fullfooter .about a{
+  padding: .4rem;
+  color: #757575;
+  text-decoration: none;
 }
